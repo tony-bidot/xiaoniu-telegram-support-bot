@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.venv/
+venv/
+
+# Secrets / local env
+.env
+*.env
+!.env.example
+
+# OpenClaw local state / scratch
+.openclaw/
+analysis_logs/
+go_analysis_*.csv
+go_analysis_*.json
+go_analysis_*.svg
+go_analysis_*.progress
+analyze_go.py
+analyze_go_batch.py
+
+# Workspace bootstrap/personal files
+BOOTSTRAP.md
+AGENTS.md
+SOUL.md
+USER.md
+TOOLS.md
+IDENTITY.md
+HEARTBEAT.md
+MEMORY.md
+memory/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
