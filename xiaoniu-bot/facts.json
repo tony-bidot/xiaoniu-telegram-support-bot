@@ -1,0 +1,77 @@
+{
+  "product": {
+    "name": "小牛AoxVPN",
+    "positioning": "用于科学上网和网络加速的服务",
+    "stableSince": "2020",
+    "summary": "可用于访问 Telegram、X、Facebook、ChatGPT 以及其他需要科学上网的平台，并支持高清视频播放与隐私保护，去除广告内容。"
+  },
+  "recommendedRegions": [
+    "香港节点",
+    "日本节点",
+    "美国节点",
+    "新加坡节点"
+  ],
+  "platforms": {
+    "android": {
+      "supported": true,
+      "downloadUrl": "https://183.240.210.119:1443/zhs/",
+      "upgradeVersion": "10.0.0",
+      "upgradeUrl": "https://q1w2e3r4.xyz/android/aox-v10.0.0.apk"
+    },
+    "ios": {
+      "supported": true,
+      "distribution": "TestFlight",
+      "downloadUrl": "https://testflight.apple.com/join/nKtSBJJU",
+      "storeRelease": false,
+      "storeReleaseNote": "正式上架版本仍在准备中。"
+    },
+    "windows": {
+      "supported": true,
+      "minVersion": "Win10",
+      "downloadUrl": "https://q1w2e3r4.xyz/android/aoxlite-v7.0.0.exe",
+      "virtualAdapter": "utun99"
+    },
+    "mac": {
+      "supported": true,
+      "version": "7.0.1",
+      "downloadUrl": "https://q1w2e3r4.xyz/android/aoxlite-v7.0.1-x64.dmg",
+      "virtualAdapter": "tun0"
+    }
+  },
+  "editions": {
+    "regular": {
+      "name": "常规版"
+    },
+    "speed": {
+      "name": "极速版",
+      "description": "采用新技术更新的版本，只保留核心 VPN 功能。",
+      "recommendedWhenUnstable": true
+    }
+  },
+  "nodeTypes": {
+    "ai": {
+      "name": "AI 节点",
+      "platforms": [
+        "ChatGPT",
+        "Gemini",
+        "Claude"
+      ]
+    },
+    "streaming": {
+      "name": "流媒体节点",
+      "platforms": [
+        "Netflix",
+        "YouTube"
+      ]
+    }
+  },
+  "vip": {
+    "purchaseUrlNote": "请直接前往官网购买。",
+    "plansNote": "VIP 套餐选择请直接前往官网详细查询。",
+    "benefits": "VIP 用户可解锁大量高质量节点，并且不限速。",
+    "freeUserLimit": "免费用户速度相对较慢，可使用的节点也比较有限。"
+  },
+  "multiDevice": {
+    "maxOnlineDevices": 5
+  }
+}

@@ -1,0 +1,353 @@
+[
+  {
+    "id": "greeting_basic",
+    "intent": "greeting",
+    "input": "你好",
+    "expect_contains": [
+      "你好，我在的"
+    ],
+    "expect_not_contains": [
+      "连接不上",
+      "请选择 AI 节点",
+      "流媒体节点"
+    ]
+  },
+  {
+    "id": "vague_help_basic",
+    "intent": "vague_help",
+    "input": "我有问题",
+    "expect_contains": [
+      "你直接说下具体遇到什么情况",
+      "设备类型"
+    ],
+    "expect_not_contains": [
+      "Mac",
+      "Windows 下载地址",
+      "请选择 AI 节点"
+    ]
+  },
+  {
+    "id": "ai_platform_support_chatgpt_gemini",
+    "intent": "ai_platform_support",
+    "input": "小牛什么节点可以用ChatGPT和Gemini",
+    "expect_contains": [
+      "支持的",
+      "请选择 AI 节点",
+      "香港节点",
+      "日本节点",
+      "美国节点"
+    ],
+    "expect_not_contains": [
+      "工程师继续跟进",
+      "连接不上"
+    ]
+  },
+  {
+    "id": "ai_platform_support_gemini_only",
+    "intent": "ai_platform_support",
+    "input": "小牛可以支持Gemini吗",
+    "expect_contains": [
+      "支持的",
+      "请选择 AI 节点"
+    ],
+    "expect_not_contains": [
+      "工程师继续跟进",
+      "暂时不能正常使用"
+    ]
+  },
+  {
+    "id": "ai_node_issue_basic",
+    "intent": "ai_node_issue",
+    "input": "AI节点用不了gemini",
+    "expect_contains": [
+      "建议你先切换到其他可用节点测试一下",
+      "工程师继续跟进处理"
+    ],
+    "expect_not_contains": [
+      "请选择 AI 节点"
+    ]
+  },
+  {
+    "id": "ai_node_issue_unlock_gemini",
+    "intent": "ai_node_issue",
+    "input": "解锁不了Gemini",
+    "expect_contains": [
+      "切换到其他可用节点",
+      "工程师继续跟进处理"
+    ],
+    "expect_not_contains": [
+      "请选择 AI 节点"
+    ]
+  },
+  {
+    "id": "streaming_support_netflix_youtube",
+    "intent": "streaming_support",
+    "input": "什么节点可以看Netflix和YouTube",
+    "expect_contains": [
+      "请选择流媒体节点",
+      "香港节点",
+      "日本节点",
+      "美国节点"
+    ],
+    "expect_not_contains": [
+      "工程师继续跟进",
+      "连接不上"
+    ]
+  },
+  {
+    "id": "streaming_issue_netflix",
+    "intent": "streaming_issue",
+    "input": "美国节点看不了奈飞",
+    "expect_contains": [
+      "流媒体可用性问题",
+      "切换到其他可用节点",
+      "技术继续跟进处理"
+    ],
+    "expect_not_contains": [
+      "请选择流媒体节点",
+      "连接不上"
+    ]
+  },
+  {
+    "id": "disconnect_issue_basic",
+    "intent": "disconnect_issue",
+    "input": "连接不太稳定啊，过几分钟就掉线",
+    "expect_contains": [
+      "连接建立后中途断开",
+      "先确认本机本身网络正常",
+      "香港节点",
+      "日本节点",
+      "美国节点"
+    ],
+    "expect_not_contains": [
+      "Windows 下载地址"
+    ]
+  },
+  {
+    "id": "single_node_problem",
+    "intent": "single_node_problem",
+    "input": "是美国1节点不太正常，其他还可以",
+    "expect_contains": [
+      "单个节点异常",
+      "记录下来",
+      "继续跟进处理"
+    ],
+    "expect_not_contains": [
+      "所有节点都有类似问题"
+    ]
+  },
+  {
+    "id": "all_nodes_problem",
+    "intent": "all_nodes_problem",
+    "input": "都有问题",
+    "expect_contains": [
+      "所有节点都有类似问题",
+      "本地网络环境",
+      "设备状态",
+      "截图"
+    ],
+    "expect_not_contains": []
+  },
+  {
+    "id": "speed_issue",
+    "intent": "speed_issue",
+    "input": "网速最近很慢",
+    "expect_contains": [
+      "速度较慢",
+      "香港节点",
+      "日本节点",
+      "美国节点"
+    ],
+    "expect_not_contains": [
+      "请选择 AI 节点"
+    ]
+  },
+  {
+    "id": "line_update_issue",
+    "intent": "line_update_issue",
+    "input": "线路是不是有更新",
+    "expect_contains": [
+      "线路策略",
+      "可用性正在调整",
+      "切换其他节点测试"
+    ],
+    "expect_not_contains": [
+      "连接不上"
+    ]
+  },
+  {
+    "id": "windows_support_download",
+    "intent": "windows_download",
+    "input": "windows可以用吗",
+    "expect_contains": [
+      "Windows 目前仅支持 Win10 及以上版本",
+      "https://q1w2e3r4.xyz/android/aoxlite-v7.0.0.exe"
+    ],
+    "expect_not_contains": [
+      "Mac 7.0.1"
+    ]
+  },
+  {
+    "id": "mac_support_download",
+    "intent": "mac_download",
+    "input": "支持mac吗",
+    "expect_contains": [
+      "Mac 可以使用",
+      "Mac 7.0.1",
+      "https://q1w2e3r4.xyz/android/aoxlite-v7.0.1-x64.dmg"
+    ],
+    "expect_not_contains": [
+      "Win10"
+    ]
+  },
+  {
+    "id": "android_support_download",
+    "intent": "android_download",
+    "input": "安卓怎么下载",
+    "expect_contains": [
+      "支持安卓",
+      "下载"
+    ],
+    "expect_not_contains": [
+      "Mac 7.0.1",
+      "Win10"
+    ]
+  },
+  {
+    "id": "ios_testflight_only",
+    "intent": "ios_download",
+    "input": "iPhone怎么下载",
+    "expect_contains": [
+      "没有正式上架版本",
+      "TestFlight",
+      "https://testflight.apple.com/join/nKtSBJJU"
+    ],
+    "expect_not_contains": [
+      "App Store"
+    ]
+  },
+  {
+    "id": "regular_vs_speed_edition",
+    "intent": "regular_vs_speed_edition",
+    "input": "常规版和极速版有什么区别",
+    "expect_contains": [
+      "所有平台都分为常规版和极速版",
+      "只保留核心 VPN 功能",
+      "常规版使用不稳定",
+      "优先尝试极速版"
+    ],
+    "expect_not_contains": [
+      "工程师继续跟进"
+    ]
+  },
+  {
+    "id": "vip_vs_free",
+    "intent": "vip_vs_free",
+    "input": "VIP和免费用户有什么区别",
+    "expect_contains": [
+      "VIP 用户",
+      "高质量节点",
+      "不限速",
+      "免费用户速度相对较慢"
+    ],
+    "expect_not_contains": [
+      "请选择 AI 节点"
+    ]
+  },
+  {
+    "id": "become_vip",
+    "intent": "become_vip",
+    "input": "怎么成为VIP",
+    "expect_contains": [
+      "直接前往官网购买"
+    ],
+    "expect_not_contains": [
+      "工程师继续跟进"
+    ]
+  },
+  {
+    "id": "vip_plans_query",
+    "intent": "plans",
+    "input": "VIP套餐有哪些",
+    "expect_contains": [
+      "官网详细查询"
+    ],
+    "expect_not_contains": [
+      "月付",
+      "季付",
+      "年付"
+    ]
+  },
+  {
+    "id": "windows_no_internet_after_connect",
+    "intent": "no_internet_after_connect",
+    "input": "Windows连上节点后上不了网",
+    "expect_contains": [
+      "上不了网",
+      "utun99"
+    ],
+    "expect_not_contains": [
+      "tun0"
+    ]
+  },
+  {
+    "id": "mac_no_internet_after_connect",
+    "intent": "no_internet_after_connect",
+    "input": "Mac连上节点后上不了网",
+    "expect_contains": [
+      "上不了网",
+      "tun0"
+    ],
+    "expect_not_contains": [
+      "utun99"
+    ]
+  },
+  {
+    "id": "android_connecting_wifi",
+    "intent": "connecting",
+    "input": "安卓一直显示连接中，校园网wifi连不上",
+    "expect_contains": [
+      "10.0.0",
+      "https://q1w2e3r4.xyz/android/aox-v10.0.0.apk"
+    ],
+    "expect_not_contains": [
+      "utun99",
+      "tun0"
+    ]
+  },
+  {
+    "id": "login_error",
+    "intent": "login_error",
+    "input": "登录提示账号错误怎么办",
+    "expect_contains": [
+      "账号和密码输入是否正确",
+      "不要带空格",
+      "字母为小写"
+    ],
+    "expect_not_contains": [
+      "请选择 AI 节点"
+    ]
+  },
+  {
+    "id": "plans",
+    "intent": "plans",
+    "input": "小牛VPN有哪些套餐",
+    "expect_contains": [
+      "官网详细查询"
+    ],
+    "expect_not_contains": [
+      "工程师继续跟进"
+    ]
+  },
+  {
+    "id": "multi_device",
+    "intent": "multi_device",
+    "input": "一个账号能登录几个设备",
+    "expect_contains": [
+      "5 个设备同时在线"
+    ],
+    "expect_not_contains": [
+      "以官方规则为准"
+    ]
+  }
+]
